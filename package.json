@@ -1,0 +1,27 @@
+{
+  "name": "godot-rust",
+  "version": "1.0.0",
+  "description": "Scripts to automate the creation of a Godot project with Rust",
+  "type": "module",
+  "bin": {
+    "new": "src/commands/new.js",
+    "convert": "src/commands/convert.js"
+  },
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json"
+  },
+  "author": "Ryan Naddy",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.4.1"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@types/chalk": "^2.2.4",
+    "@types/node": "^22.10.5",
+    "semantic-release": "^24.2.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
