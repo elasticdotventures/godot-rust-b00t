@@ -18,18 +18,19 @@ This repository contains tools for working with Rust and Godot.
 
 ## New Rust Project
 
-This will create a new rust project by either creating a completely new project or adding rust to an existing Godot project.
+This will create a new rust project with the necessary files to work with Godot.
 
-To create a new project, run the following command, it has interactive prompts to help you set up your project.
+To create a new project, run the following command, it has interactive prompts to help you create your project.
 
 ```sh
-npx godot-rust new
+npx godot-rust@latest new
 ```
 
 ## Convert Existing Godot Project
 
 This will convert an existing Godot project to a Godot Rust project.
-Run the command in a folder that contains a `project.godot` file. This will ask for the name of the project, and give you two options.
+
+Run the command in a folder that contains a `project.godot` file, it has interactive prompts to help you convert your project.
 
 1. Add Rust to the project
   - Adds a new `rust` folder to the project
@@ -38,5 +39,5 @@ Run the command in a folder that contains a `project.godot` file. This will ask 
    - Creates a new Rust project in `<my-project>/rust`
 
 ```sh
-npx godot-rust convert
+npx godot-rust@latest convert
 ```
