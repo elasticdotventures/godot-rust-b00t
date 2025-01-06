@@ -1,9 +1,9 @@
 [
   {
     "name": "Godot Rust Scripts",
-    "id": "godot-rust-scripts",
+    "id": "godot-rust-script",
     "type": "crate",
-    "source": "godot-rust-scripts",
+    "source": "godot-rust-script",
     "options": {
       "git": { "url": "https://github.com/TitanNano/godot-rust-script.git", "branch": "master" }
     }
