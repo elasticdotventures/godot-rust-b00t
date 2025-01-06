@@ -45,6 +45,15 @@
     }
   },
   {
+    "name": "Godot Tour",
+    "id": "godot-tour",
+    "type": "crate",
+    "source": "godot_tour",
+    "options": {
+      "git": { "url": "https://github.com/Decapitated/Godot-Tour.git", "branch": "main" }
+    }
+  },
+  {
     "name": "Coroutines",
     "id": "gdext-coroutines",
     "type": "crate",
