@@ -4,7 +4,9 @@
     "id": "godot-rust-scripts",
     "type": "git",
     "sournce": "godot-rust-scripts",
-    "git": { "url": "https://github.com/TitanNano/godot-rust-script.git", "branch": "master" }
+    "options": {
+      "git": { "url": "https://github.com/TitanNano/godot-rust-script.git", "branch": "master" }
+    }
   },
   {
     "name": "Godot Coroutines",
