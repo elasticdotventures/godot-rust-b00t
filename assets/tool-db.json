@@ -27,6 +27,15 @@
     }
   },
   {
+    "name": "Spire Tween",
+    "id": "spire-tween",
+    "type": "crate",
+    "source": "spire_tween",
+    "options": {
+      "git": { "url": "https://github.com/Houtamelo/spire_tween.git", "branch": "main" }
+    }
+  },
+  {
     "name": "Coroutines",
     "id": "gdext-coroutines",
     "type": "crate",
@@ -39,7 +48,7 @@
     "source": "godot_tokio"
   },
   {
-    "name": "Ext Gen",
+    "name": "Extension Generation",
     "id": "gdext-gen",
     "type": "crate",
     "source": "gdext-gen"
