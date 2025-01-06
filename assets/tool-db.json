@@ -9,6 +9,15 @@
     }
   },
   {
+    "name": "Godot Props",
+    "id": "gd-props",
+    "type": "crate",
+    "source": "gd-props",
+    "options": {
+      "git": { "url": "https://github.com/StatisMike/gd-props.git", "branch": "master" }
+    }
+  },
+  {
     "name": "Godot Coroutines",
     "id": "gdext-coroutines",
     "type": "crate",
