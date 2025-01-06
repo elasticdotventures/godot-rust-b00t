@@ -67,7 +67,7 @@
     "id": "nobodywho",
     "type": "asset",
     "options": {
-      "asset-store": {
+      "asset": {
         "page": "https://godotengine.org/asset-library/asset/2886"
       }
     }
