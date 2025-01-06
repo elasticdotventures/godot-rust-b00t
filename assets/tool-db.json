@@ -1,6 +1,6 @@
 [
   {
-    "name": "Godot Rust Scripts",
+    "name": "Rust Scripts",
     "id": "godot-rust-script",
     "type": "crate",
     "source": "godot-rust-script",
@@ -9,7 +9,7 @@
     }
   },
   {
-    "name": "Godot Props",
+    "name": "Props",
     "id": "gd-props",
     "type": "crate",
     "source": "gd-props",
@@ -18,19 +18,28 @@
     }
   },
   {
-    "name": "Godot Coroutines",
+    "name": "Rehearse",
+    "id": "gd-rehearse",
+    "type": "crate",
+    "source": "gd-rehearse",
+    "options": {
+      "git": { "url": "https://github.com/StatisMike/gd-rehearse.git", "branch": "master" }
+    }
+  },
+  {
+    "name": "Coroutines",
     "id": "gdext-coroutines",
     "type": "crate",
     "source": "gdext_coroutines"
   },
   {
-    "name": "Godot Tokio",
+    "name": "Tokio",
     "id": "godot-tokio",
     "type": "crate",
     "source": "godot_tokio"
   },
   {
-    "name": "Godot Ext Gen",
+    "name": "Ext Gen",
     "id": "gdext-gen",
     "type": "crate",
     "source": "gdext-gen"
