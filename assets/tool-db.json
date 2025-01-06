@@ -28,11 +28,20 @@
   },
   {
     "name": "Spire Tween",
+    "id": "grid-forge",
+    "type": "crate",
+    "source": "grid-forge",
+    "options": {
+      "git": { "url": "https://github.com/Houtamelo/spire_tween.git", "branch": "main" }
+    }
+  },
+  {
+    "name": "Grid Forge",
     "id": "spire-tween",
     "type": "crate",
     "source": "spire_tween",
     "options": {
-      "git": { "url": "https://github.com/Houtamelo/spire_tween.git", "branch": "main" }
+      "git": { "url": "https://github.com/StatisMike/grid-forge.git", "branch": "master" }
     }
   },
   {
