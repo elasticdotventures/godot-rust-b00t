@@ -1,5 +1,5 @@
 import chalk from 'chalk';
-import * as readline from 'node:readline';
+import inquirer from 'inquirer';
 
 const theme = {
   defaultValue: '#8a8a8a',
@@ -9,17 +9,54 @@ const theme = {
   warning: '#ff9f3d',
 };
 
+/**
+ * Display a success message.
+ * @param text The text to display.
+ */
 export const success = (text: string) => chalk.hex(theme.success)(text);
+/**
+ * Display an info message.
+ * @param text The text to display.
+ */
 export const info = (text: string) => chalk.hex(theme.info)(text);
+/**
+ * Display a default value.
+ * @param text The text to display.
+ */
 export const defaultValue = (text: string) => chalk.hex(theme.defaultValue)(text);
+/**
+ * Display an error message.
+ * @param text The text to display.
+ */
 export const error = (text: string) => chalk.hex(theme.error)(text);
+/**
+ * Display a warning message.
+ * @param text The text to display.
+ */
 export const warning = (text: string) => chalk.hex(theme.warning)(text);
-
-export const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
 /**
  * Ask a question to the user.
- * @param query The question to ask.
+ * @param message The question to ask.
  */
-export function askQuestion(query: string): Promise<string> {
-  return new Promise(resolve => rl.question(query + ' ', resolve));
+export async function askQuestion(message: string): Promise<string | undefined> {
+  try {
+    const response = await inquirer.prompt({ name: 'question', message, type: 'input' });
+    return response.question ?? '';
+  } catch {
+    return undefined;
+  }
+}
+/**
+ * Show a selection prompt to the user.
+ * @param message The message to display.
+ * @param choices The choices to select from.
+ * @param pageSize The number of choices to display per page. Defaults to 10.
+ */
+export async function getSelectionList<T, U extends { name: string; value: T }>(message: string, choices: U[], pageSize = 10) {
+  try {
+    const response = await inquirer.prompt({ name: 'question', message, type: 'list', choices, pageSize });
+    return response.question as U['value'];
+  } catch {
+    return undefined;
+  }
 }
