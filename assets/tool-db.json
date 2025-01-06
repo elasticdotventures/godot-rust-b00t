@@ -54,6 +54,15 @@
     }
   },
   {
+    "name": "Godot Trail3D",
+    "id": "godot-trail-3d",
+    "type": "crate",
+    "source": "godot_trail_3d",
+    "options": {
+      "git": { "url": "https://github.com/SomeRanDev/Godot-Trail3D.git", "branch": "main" }
+    }
+  },
+  {
     "name": "Coroutines",
     "id": "gdext-coroutines",
     "type": "crate",
