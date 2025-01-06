@@ -3,7 +3,7 @@
     "name": "Godot Rust Scripts",
     "id": "godot-rust-scripts",
     "type": "crate",
-    "sournce": "godot-rust-scripts",
+    "source": "godot-rust-scripts",
     "options": {
       "git": { "url": "https://github.com/TitanNano/godot-rust-script.git", "branch": "master" }
     }
