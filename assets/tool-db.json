@@ -63,6 +63,16 @@
     }
   },
   {
+    "name": "NobodyWho",
+    "id": "nobodywho",
+    "type": "asset",
+    "options": {
+      "asset-store": {
+        "page": "https://godotengine.org/asset-library/asset/2886"
+      }
+    }
+  },
+  {
     "name": "Coroutines",
     "id": "gdext-coroutines",
     "type": "crate",
