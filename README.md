@@ -1,11 +1,13 @@
 # Godot Rust Tools
 
-This repository contains tools for working with Rust and Godot.
+This repository contains opinionated stack of tools for working with Rust and Godot _b00t_ 
+Github, Docker, VsCode (with plugins) & Aider/Tabby coPilot for Godot
 
 ## Prerequisites
 
 ### Required
 
+- [_b00t_](https://) .. wip. 
 - [Node.js](https://nodejs.org/en/download/) &ndash; Used to run the scripts
 - [Rust](https://www.rust-lang.org/tools/install) &ndash; Used to run cargo commands
 
@@ -22,11 +24,14 @@ These are the supported commands.
 
 ```sh
 # To see the information about the commands:
-npx godot-rust@latest help
+bun x godot-rust@latest help
 
 # To see the information about a specific command (where <command> is the command you want help for):
-npx godot-rust@latest <command> -h
+bun x godot-rust@latest <command> -h
+
 ```
+
+
 
 ### New Rust Project
 
@@ -35,7 +40,7 @@ This will create a new rust project with the necessary files to work with Godot.
 To create a new project, run the following command, it has interactive prompts to help you create your project.
 
 ```sh
-npx godot-rust@latest new
+bun x godot-rust@latest new
 ```
 
 ### Convert Existing Godot Project
@@ -51,7 +56,7 @@ Run the command in a folder that contains a `project.godot` file, it has interac
    - Creates a new Rust project in `<my-project>/rust`
 
 ```sh
-npx godot-rust@latest convert
+bun x godot-rust@latest convert
 ```
 
 ### Add Tools
@@ -63,7 +68,7 @@ This will allow you to add tools that are available in the [database](assets/too
 3. Github Releases &ndash; Libraries that are from Github releases page marked as `latest`
 
 ```sh
-npx godot-rust@latest add
+bun x godot-rust@latest add
 ```
 
 ### Remove Tools
@@ -72,7 +77,7 @@ This will allow you to remove tools from your project.\
 **Note:** Currently this only supports removing Rust crates.
 
 ```sh
-npx godot-rust@latest remove
+bun x godot-rust@latest remove
 # or
-npx godot-rust@latest rm
+bun x godot-rust@latest rm
 ```
